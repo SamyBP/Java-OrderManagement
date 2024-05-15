@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.geometry.Insets?>
+
+<?import java.net.URL?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="utcn.ordermanagement.controllers.LandingController"
+           prefWidth="1000" prefHeight="550">
+
+    <!-- Background Image -->
+    <ImageView fitWidth="1000" fitHeight="550">
+        <Image url="@landing-background.png" preserveRatio="true" smooth="true"/>
+    </ImageView>
+
+<!--    Login button at top left-->
+    <Button text="Login"  fx:id="loginButton" styleClass="button" StackPane.alignment="TOP_LEFT">
+        <StackPane.margin>
+            <Insets top="20" left="10"/>
+        </StackPane.margin>
+    </Button>
+
+    <Button text="Register"  fx:id="registerButton" styleClass="button" StackPane.alignment="TOP_LEFT">
+        <StackPane.margin>
+            <Insets top="20" left="120"/>
+        </StackPane.margin>
+    </Button>
+
+    <stylesheets >
+        <URL value="@style.css" />
+    </stylesheets>
+
+</StackPane>

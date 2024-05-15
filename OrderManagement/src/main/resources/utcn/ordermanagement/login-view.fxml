@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="utcn.ordermanagement.controllers.AuthenticationController"
+           prefHeight="550" prefWidth="1000" stylesheets="@style.css">
+
+    <GridPane alignment="TOP_CENTER" hgap="10" vgap="10" style="-fx-background-color: #005A9C">
+        <padding>
+            <Insets top="100" right="20" bottom="50" left="20"/>
+        </padding>
+
+        <Label text="Login" styleClass="title" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0"/>
+
+        <Label text="Username:" styleClass="label-field" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="username" GridPane.columnIndex="0" GridPane.rowIndex="2" prefWidth="300"/>
+
+        <Label text="Password:" styleClass="label-field" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <PasswordField fx:id="password" GridPane.columnIndex="0" GridPane.rowIndex="4" prefWidth="300"/>
+
+        <Button text="Login" onAction="#login" styleClass="button-full-width" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    </GridPane>
+
+</StackPane>

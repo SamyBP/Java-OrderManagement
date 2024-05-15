@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="utcn.ordermanagement.controllers.BillViewController"
+            prefWidth="1000" prefHeight="600"
+            stylesheets="@style.css">
+
+    <left>
+        <VBox style="-fx-background-color: #6082B6"
+              prefWidth="250"
+              spacing="10">
+            <padding>
+                <Insets top="20" left="25" right="25"/>
+            </padding>
+            <Button fx:id="homeButton" styleClass="button-sidebar" text="Home"/>
+            <Button fx:id="clientsButton"  styleClass="button-sidebar" text="Clients"/>
+            <Button fx:id="productsButton" styleClass="button-sidebar" text="Products"/>
+            <Button fx:id="ordersButton" styleClass="button-sidebar" text="Orders"/>
+            <Button fx:id="billsButton" styleClass="button-sidebar" text="Bills"/>
+        </VBox>
+    </left>
+
+    <!-- Main Content -->
+    <center>
+        <VBox>
+            <!-- TableView -->
+            <VBox>
+                <padding>
+                    <Insets top="20" left="25" right="25"/>
+                </padding>
+                <TableView fx:id="billTable">
+
+                </TableView>
+            </VBox>
+        </VBox>
+    </center>
+
+</BorderPane>

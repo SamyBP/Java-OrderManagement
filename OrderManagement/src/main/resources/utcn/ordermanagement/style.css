@@ -1,0 +1,88 @@
+.button:hover {
+    -fx-background-color: darkorange;
+    -fx-text-fill: white;
+    -fx-min-width: 100;
+    -fx-min-height: 40;
+    -fx-background-radius: 10;
+}
+
+.button {
+    -fx-background-color: orange;
+    -fx-text-fill: white;
+    -fx-min-width: 100;
+    -fx-min-height: 40;
+    -fx-background-radius: 10;
+}
+
+.button-full-width{
+    -fx-min-width: 300;
+}
+
+.button-sidebar{
+    -fx-min-width: 200;
+}
+
+.button-sidebar:hover{
+    -fx-min-width: 200;
+}
+
+.button-full-width:hover{
+    -fx-min-width: 300;
+}
+
+.button-add{
+    -fx-background-color: #50C878;
+    -fx-min-width: 700;
+}
+
+.button-add:hover{
+    -fx-background-color: #71BC78;
+    -fx-min-width: 700;
+}
+
+.delete-button{
+    -fx-background-color: red;
+    -fx-min-width: 30;
+    -fx-min-height: 15;
+}
+
+.delete-button:hover{
+    -fx-background-color: darkred;
+    -fx-min-width: 30;
+    -fx-min-height: 15;
+}
+
+.update-button{
+    -fx-background-color: #6082B6;
+    -fx-min-width: 30;
+    -fx-min-height: 15;
+}
+
+.update-button:hover{
+    -fx-background-color: #005A9C;
+    -fx-min-width: 30;
+    -fx-min-height: 15;
+}
+
+.title {
+    -fx-text-fill: white;
+    -fx-font-size: 40;
+}
+
+.label-field {
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+}
+
+.chart-bar {
+    -fx-bar-fill: #50C878;
+}
+
+.chart-title{
+    -fx-font-size: 30;
+    -fx-font-family: Arial;
+}
+
+.red-bar {
+    -fx-bar-fill: red;
+}
